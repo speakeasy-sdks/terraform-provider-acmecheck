@@ -18,11 +18,11 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/terraform-provider-acmecheck"
+	terraformprovideracmecheck "github.com/speakeasy-sdks/terraform-provider-acmecheck"
 )
 
 func main() {
-    s := acmetest.New()
+    s := terraformprovideracmecheck.New()
 
     ctx := context.Background()
     res, err := s.Pets.CreatePets(ctx)
@@ -60,16 +60,16 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/terraform-provider-acmecheck"
+	terraformprovideracmecheck "github.com/speakeasy-sdks/terraform-provider-acmecheck"
 	"github.com/speakeasy-sdks/terraform-provider-acmecheck/pkg/models/operations"
 )
 
 func main() {
-    s := acmetest.New()
+    s := terraformprovideracmecheck.New()
 
     ctx := context.Background()
     res, err := s.Pets.ListPets(ctx, operations.ListPetsRequest{
-        Limit: acmetest.Int(548814),
+        Limit: terraformprovideracmecheck.Int(548814),
     })
     if err != nil {
         log.Fatal(err)
@@ -106,12 +106,12 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/terraform-provider-acmecheck"
+	terraformprovideracmecheck "github.com/speakeasy-sdks/terraform-provider-acmecheck"
 	"github.com/speakeasy-sdks/terraform-provider-acmecheck/pkg/models/operations"
 )
 
 func main() {
-    s := acmetest.New()
+    s := terraformprovideracmecheck.New()
 
     ctx := context.Background()
     res, err := s.Pets.ShowPetByID(ctx, operations.ShowPetByIDRequest{

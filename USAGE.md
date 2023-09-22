@@ -7,11 +7,11 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/terraform-provider-acmecheck"
+	terraformprovideracmecheck "github.com/speakeasy-sdks/terraform-provider-acmecheck"
 )
 
 func main() {
-    s := acmetest.New()
+    s := terraformprovideracmecheck.New()
 
     ctx := context.Background()
     res, err := s.Pets.CreatePets(ctx)
