@@ -47,7 +47,7 @@ func main() {
 ## Available Resources and Operations
 
 
-### [.Pets](docs/sdks/pets/README.md)
+### [Pets](docs/sdks/pets/README.md)
 
 * [CreatePets](docs/sdks/pets/README.md#createpets) - Create a pet
 * [ListPets](docs/sdks/pets/README.md#listpets) - List all pets
@@ -83,9 +83,40 @@ Here's an example of one such pagination call:
 <!-- Start Error Handling -->
 # Error Handling
 
-Handling errors in your SDK should largely match your expectations.  All operations return a response object or an error, they will never return both.  When specified by the OpenAPI spec document, the SDK will return the appropriate subclass.
+Handling errors in this SDK should largely match your expectations.  All operations return a response object or an error, they will never return both.  When specified by the OpenAPI spec document, the SDK will return the appropriate subclass.
+
+| Error Object       | Status Code        | Content Type       |
+| ------------------ | ------------------ | ------------------ |
+| sdkerrors.SDKError | 400-600            | */*                |
 
 
+## Example
+
+```go
+package main
+
+import (
+	"context"
+	terraformprovideracmecheck "github.com/speakeasy-sdks/terraform-provider-acmecheck"
+	"log"
+)
+
+func main() {
+	s := terraformprovideracmecheck.New()
+
+	ctx := context.Background()
+	res, err := s.Pets.CreatePets(ctx)
+	if err != nil {
+
+		var e *sdkerrors.SDKError
+		if errors.As(err, &e) {
+			// handle error
+			log.Fatal(e.Error())
+		}
+	}
+}
+
+```
 <!-- End Error Handling -->
 
 
