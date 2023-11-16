@@ -1,6 +1,4 @@
 <!-- Start SDK Example Usage -->
-
-
 ```go
 package main
 
@@ -8,6 +6,7 @@ import (
 	"context"
 	terraformprovideracmecheck "github.com/speakeasy-sdks/terraform-provider-acmecheck"
 	"log"
+	"net/http"
 )
 
 func main() {

@@ -17,9 +17,10 @@ Create a pet
 package main
 
 import(
+	terraformprovideracmecheck "github.com/speakeasy-sdks/terraform-provider-acmecheck"
 	"context"
 	"log"
-	terraformprovideracmecheck "github.com/speakeasy-sdks/terraform-provider-acmecheck"
+	"net/http"
 )
 
 func main() {
@@ -61,10 +62,10 @@ List all pets
 package main
 
 import(
-	"context"
-	"log"
 	terraformprovideracmecheck "github.com/speakeasy-sdks/terraform-provider-acmecheck"
+	"context"
 	"github.com/speakeasy-sdks/terraform-provider-acmecheck/pkg/models/operations"
+	"log"
 )
 
 func main() {
@@ -107,10 +108,10 @@ Info for a specific pet
 package main
 
 import(
-	"context"
-	"log"
 	terraformprovideracmecheck "github.com/speakeasy-sdks/terraform-provider-acmecheck"
+	"context"
 	"github.com/speakeasy-sdks/terraform-provider-acmecheck/pkg/models/operations"
+	"log"
 )
 
 func main() {
