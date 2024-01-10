@@ -129,3 +129,13 @@ Based on:
 - [go v0.6.1] .
 ### Releases
 - [Go v0.6.1] https://github.com/speakeasy-sdks/terraform-provider-acmecheck/releases/tag/v0.6.1 - .
+
+## 2024-01-10 18:08:56
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 
+- Speakeasy CLI 1.134.1 (2.230.3) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [go v0.6.2] .
+### Releases
+- [Go v0.6.2] https://github.com/speakeasy-sdks/terraform-provider-acmecheck/releases/tag/v0.6.2 - .

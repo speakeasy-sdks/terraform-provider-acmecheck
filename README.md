@@ -26,6 +26,7 @@ package main
 import (
 	"context"
 	terraformprovideracmecheck "github.com/speakeasy-sdks/terraform-provider-acmecheck"
+	"github.com/speakeasy-sdks/terraform-provider-acmecheck/pkg/models/shared"
 	"log"
 	"net/http"
 )
@@ -34,7 +35,10 @@ func main() {
 	s := terraformprovideracmecheck.New()
 
 	ctx := context.Background()
-	res, err := s.Pets.CreatePets(ctx)
+	res, err := s.Pets.CreatePets(ctx, shared.Pet{
+		ID:   596804,
+		Name: "string",
+	})
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -90,6 +94,7 @@ import (
 	"errors"
 	terraformprovideracmecheck "github.com/speakeasy-sdks/terraform-provider-acmecheck"
 	"github.com/speakeasy-sdks/terraform-provider-acmecheck/pkg/models/sdkerrors"
+	"github.com/speakeasy-sdks/terraform-provider-acmecheck/pkg/models/shared"
 	"log"
 )
 
@@ -97,7 +102,10 @@ func main() {
 	s := terraformprovideracmecheck.New()
 
 	ctx := context.Background()
-	res, err := s.Pets.CreatePets(ctx)
+	res, err := s.Pets.CreatePets(ctx, shared.Pet{
+		ID:   596804,
+		Name: "string",
+	})
 	if err != nil {
 
 		var e *sdkerrors.SDKError
@@ -132,6 +140,7 @@ package main
 import (
 	"context"
 	terraformprovideracmecheck "github.com/speakeasy-sdks/terraform-provider-acmecheck"
+	"github.com/speakeasy-sdks/terraform-provider-acmecheck/pkg/models/shared"
 	"log"
 	"net/http"
 )
@@ -142,7 +151,10 @@ func main() {
 	)
 
 	ctx := context.Background()
-	res, err := s.Pets.CreatePets(ctx)
+	res, err := s.Pets.CreatePets(ctx, shared.Pet{
+		ID:   596804,
+		Name: "string",
+	})
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -164,6 +176,7 @@ package main
 import (
 	"context"
 	terraformprovideracmecheck "github.com/speakeasy-sdks/terraform-provider-acmecheck"
+	"github.com/speakeasy-sdks/terraform-provider-acmecheck/pkg/models/shared"
 	"log"
 	"net/http"
 )
@@ -174,7 +187,10 @@ func main() {
 	)
 
 	ctx := context.Background()
-	res, err := s.Pets.CreatePets(ctx)
+	res, err := s.Pets.CreatePets(ctx, shared.Pet{
+		ID:   596804,
+		Name: "string",
+	})
 	if err != nil {
 		log.Fatal(err)
 	}
