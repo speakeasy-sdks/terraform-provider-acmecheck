@@ -4,16 +4,16 @@ management:
   docChecksum: 1bdb7a6f8bf3995d4b40475228403253
   docVersion: 1.0.0
   speakeasyVersion: internal
-  generationVersion: 2.250.2
-  releaseVersion: 0.7.0
-  configChecksum: 04c95fac924ee5ed73609342744fafe8
+  generationVersion: 2.258.0
+  releaseVersion: 0.8.0
+  configChecksum: df3a7af84e073588b23569cc2eab2c41
   repoURL: https://github.com/speakeasy-sdks/terraform-provider-acmecheck.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/terraform-provider-acmecheck
   published: true
 features:
   go:
-    core: 3.3.2
+    core: 3.4.0
     globalServerURLs: 2.82.1
 generatedFiles:
   - pets.go
@@ -52,3 +52,4 @@ generatedFiles:
   - docs/sdks/pets/README.md
   - USAGE.md
   - .gitattributes
+  - internal/hooks/hooks.go
