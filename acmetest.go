@@ -116,9 +116,9 @@ func New(opts ...SDKOption) *AcmeTest {
 		sdkConfiguration: sdkConfiguration{
 			Language:          "go",
 			OpenAPIDocVersion: "1.0.0",
-			SDKVersion:        "0.9.0",
-			GenVersion:        "2.279.1",
-			UserAgent:         "speakeasy-sdk/go 0.9.0 2.279.1 1.0.0 github.com/speakeasy-sdks/terraform-provider-acmecheck",
+			SDKVersion:        "0.9.1",
+			GenVersion:        "2.280.6",
+			UserAgent:         "speakeasy-sdk/go 0.9.1 2.280.6 1.0.0 github.com/speakeasy-sdks/terraform-provider-acmecheck",
 			Hooks:             hooks.New(),
 		},
 	}
