@@ -3,17 +3,17 @@ id: 5a4602a6-609f-4579-bcd0-70782004c44d
 management:
   docChecksum: 1bdb7a6f8bf3995d4b40475228403253
   docVersion: 1.0.0
-  speakeasyVersion: 1.207.1
-  generationVersion: 2.280.6
-  releaseVersion: 0.9.1
-  configChecksum: 9beef5d26d72b645b87586da94a399f0
+  speakeasyVersion: 1.227.0
+  generationVersion: 2.291.0
+  releaseVersion: 0.9.2
+  configChecksum: 4bd389d33039841acc6c6aacf8c250e9
   repoURL: https://github.com/speakeasy-sdks/terraform-provider-acmecheck.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/terraform-provider-acmecheck
   published: true
 features:
   go:
-    core: 3.4.4
+    core: 3.4.5
     globalServerURLs: 2.82.2
     responseFormat: 0.1.0
 generatedFiles:
